@@ -1,8 +1,10 @@
 # Passo a passo
 
-`docker build -t jenkins-blueocean:2.440.3 .`
-
 ```
+docker network create jenkins
+
+docker build -t jenkins-blueocean:2.440.3 .
+
 docker run \
 --name jenkins-blueocean \
 --restart=on-failure \
